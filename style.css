@@ -1,0 +1,142 @@
+body {
+  background-image: url('img/bg5.png');
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+  align-items: center;
+  clear:left;
+  font-family: 'Relica Rounded';
+  cursor: url(https://cur.cursors-4u.net/food/foo-1/foo73.cur), auto;
+}
+
+h1 {
+  color: #AEFEFF;
+  font-size: 7.5rem;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  animation: transitionIn 1s;
+
+}
+
+.des {
+  font-size: 2.5rem;
+  color: #99E2FF;
+  text-align: center;
+}
+
+p {
+  font-size: 1.875rem;
+  color: #BBEFFF;
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+  top: 0;
+  height: auto;
+  text-align:center;
+  margin-top: 5rem;
+ }
+
+.logo1{
+  margin-top: 0;
+  margin-left:auto;
+  margin-right: auto;
+  padding-right:3rem;
+  animation: button1in 2s;
+  height: 50px;
+  width: 50px;
+}
+.logo2{
+  margin-left:auto;
+  margin-right: auto;
+  animation: button2in 2s;
+  height: 50px;
+  width: 50px;
+}
+.down{
+
+  color: #FFCC99;
+}
+.soon{
+  padding-top: 20px;
+}
+
+.soon::after{
+  content: '';
+  animation: sol infinite 3s;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes button1in {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes button2in {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes sol {
+0%{
+  content: 'Shortly!'
+}
+100%{
+  content: 'on Solana!'
+}
+}
+@font-face {
+    font-family: 'Relica Rounded';
+    src: local('font/relica rounded/Relica Rounded Regular'), local('font/relicacrounded/Relica-Rounded-Regular'),
+        url('font/relica rounded/RelicaRounded-Regular.woff2') format('woff2'),
+        url('font/relica rounded/RelicaRounded-Regular.woff') format('woff'),
+        url('font/relica rounded/RelicaRounded-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+      font-family: 'Chendolle';
+      src: local('font/chendolle/Chendolle'), local('font/relica rounded/Chendolle'),
+          url('font/chendolle/Chendolle.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+footer{
+  font-size: 0.7rem;
+  text-align: right;
+  padding-top: 3rem;
+  color: #80B1FF;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
