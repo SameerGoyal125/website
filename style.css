@@ -65,7 +65,7 @@ p {
 
 .soon::after{
   content: '';
-  position: absolute;
+  position: static;
   animation: sol infinite 3s;
 }
 @keyframes transitionIn {
