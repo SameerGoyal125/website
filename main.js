@@ -25,27 +25,13 @@ change=[100];
 
 setInterval('randomchange()', 500);
 
-
-function chooseColor(){
-  var no=Math.floor(Math.random()*colors.length);
-  console.log(no);
-  var found=0;
-  // if(change.find(no)){
-  //   chooseColor();
-  // }
-  // else{
-  //   change.push(no)
-  //   return no;
-  for(let x in change){
-    if (no==change[x]){
-      found=1;
-    }
+const soon=['Coming on Solana','Coming shortly!']
+var w=0;
+function textchange(){
+  if(w==2){
+    w=0;
   }
-  if(found==1){
-    chooseColor();
-  }
-  else{
-    change.push(no);
-    return no;
-  }
-  }
+  document.getElementById('coming').innerHTML = soon[w];
+  w=w+1;
+}
+setInterval('textchange()', 1000);
