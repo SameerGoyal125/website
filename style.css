@@ -63,11 +63,7 @@ p {
   padding-top: 20px;
 }
 
-.soon::after{
-  content: '';
-  position: static;
-  animation: sol infinite 3s;
-}
+
 @keyframes transitionIn {
   from {
     opacity: 0;
